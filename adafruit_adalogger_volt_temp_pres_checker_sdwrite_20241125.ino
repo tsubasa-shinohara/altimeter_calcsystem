@@ -16,9 +16,9 @@
 #include <Adafruit_BMP280.h>
 //#include <Adafruit_Sensor.h>
 
-#define BMP_SCK 13 //SPI Clock（）
-#define BMP_MISO 12 //SPI Master Input Slave Output（スレーブからマスターへデータを送信）
-#define BMP_MOSI 11 //SPI Master Output Slave Input（マスターからスレーブへデータを送信）
+#define BMP_SCK 13 //SPI Clock（時刻の同期）
+#define BMP_MISO 12 //SPI Master Input Slave Output（周辺機器側から制御側へデータを送信）
+#define BMP_MOSI 11 //SPI Master Output Slave Input（制御側から周辺機器側へデータを送信）
 #define BMP_CS 10 // SPI Chip Select（デバイスを選択する信号）
 
 Adafruit_BMP280 bmp(BMP_CS, BMP_MOSI, BMP_MISO, BMP_SCK);
